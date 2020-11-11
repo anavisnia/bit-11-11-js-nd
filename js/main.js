@@ -78,18 +78,37 @@ let verte3 = myNumbers[0] - myNumbers[1] + myNumbers[2] - myNumbers[3] + myNumbe
 console.log(verte3);
 
 // Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
+const favSongsText = `${favSongs[4]}, ${favSongs[3]}, ${favSongs[2]}, ${favSongs[1]}, ${favSongs[0]}`;
+console.log(favSongsText);
 
+const progLangText = `${progLang[4]}, ${progLang[3]}, ${progLang[2]}, ${progLang[1]}, ${progLang[0]}`;
+console.log(progLangText);
+
+const deskSetupText = `${deskSetup[4]}, ${deskSetup[3]}, ${deskSetup[2]}, ${deskSetup[1]}, ${deskSetup[0]}`;
+console.log(deskSetupText);
+
+// Kitaip *************************************************************************************************
 // array.reverse() !changes the original array
 favSongs.reverse();
 // console.log(favSongs);
 console.log(favSongs);
+favSongsStr = favSongs.toString();
+console.log(favSongsStr);
 
 progLang.reverse();
 console.log(progLang);
+progLangStr = progLang.toString();
+console.log(progLangStr);
 
 deskSetup.reverse();
 console.log(deskSetup);
+deskSetupStr = deskSetup.toString();
+console.log(deskSetupStr);
 
 // array.concat join two or more arrays
 let comboArr = deskSetup.concat(progLang,favSongs);
+
 console.log(comboArr);
+let comboArrJ = comboArr.join(", ");
+const comboArrStr = comboArrJ.toString();
+console.log(comboArrStr);
