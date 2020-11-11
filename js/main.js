@@ -1,17 +1,8 @@
 console.log('Veikia');
 
-/*
+/* **********************
  * Kintamųjų inicijavimas:
-
-    Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis
-        Po kiekvieno jų inicijavimo, išvesti į console
-    Sukurti 3 kintamuosius su teksto tipo reikšmėmis
-        Po kiekvieno jų inicijavimo, išvesti į console
-    Sukurti 3 sąrašo tipo kintamuosius su penkiomis skaičių tipo reikšmėmis
-        Po kiekvieno jų inicijavimo, išvesti į console
-    Sukurti 3 sąrašo tipo kintamuosius su penkiomis teksto tipo reikšmėmis
-        Po kiekvieno jų inicijavimo, išvesti į console
-*/
+********************** */
 
 // Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis
 // Po kiekvieno jų inicijavimo, išvesti į console
@@ -57,21 +48,9 @@ console.log(progLang);
 const deskSetup = ['laptop', 'monitor', 'keyboard', 'mouse', 'headphones'];
 console.log(deskSetup);
 
-/*
+/* **********************
 Veiksmai su kintamaisiais:
-
-    Susumuoti visus skaičiaus tipo kintamuosius
-        Rezultatą išvesti į console
-
-    Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas
-        Rezultatą išvesti į console
-
-    Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką
-        1-2+3-4+5
-        Rezultatą išvesti į console
-
-    Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
-*/
+********************** */
 
 // Susumuoti visus skaičiaus tipo kintamuosius
 // Rezultatą išvesti į console
