@@ -68,13 +68,13 @@ console.log(myGreet);
 // 1-2+3-4+5
 // Rezultatą išvesti į console
 
-let verte1 = myInts[0] - myInts[1] + myInts[2] - myInts[3] + myInts[4];
+const verte1 = myInts[0] - myInts[1] + myInts[2] - myInts[3] + myInts[4];
 console.log(verte1);
 
-let verte2 = myDecimals[0] - myDecimals [1] + myDecimals[2] - myDecimals[3] + myDecimals[4];
+const verte2 = myDecimals[0] - myDecimals [1] + myDecimals[2] - myDecimals[3] + myDecimals[4];
 console.log(verte2);
 
-let verte3 = myNumbers[0] - myNumbers[1] + myNumbers[2] - myNumbers[3] + myNumbers[4];
+const verte3 = myNumbers[0] - myNumbers[1] + myNumbers[2] - myNumbers[3] + myNumbers[4];
 console.log(verte3);
 
 // Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
