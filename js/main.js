@@ -92,20 +92,20 @@ console.log(deskSetupText);
 favSongs.reverse();
 // console.log(favSongs);
 console.log(favSongs);
-let favSongsJ = favSongs.join(", ");
-favSongsStr = favSongsJ.toString();
+const favSongsJ = favSongs.join(", ");
+const favSongsStr = favSongsJ.toString();
 console.log(favSongsStr);
 
 progLang.reverse();
 console.log(progLang);
-let progLangJ = progLang.join(", ");
-progLangStr = progLangJ.toString();
+const progLangJ = progLang.join(", ");
+const progLangStr = progLangJ.toString();
 console.log(progLangStr);
 
 deskSetup.reverse();
 console.log(deskSetup);
-let deskSetupJ = deskSetup.join(", ");
-deskSetupStr = deskSetupJ.toString();
+const deskSetupJ = deskSetup.join(", ");
+const deskSetupStr = deskSetupJ.toString();
 console.log(deskSetupStr);
 
 // array.concat join two or more arrays
@@ -115,5 +115,5 @@ console.log(deskSetupStr);
 // let comboArrJ = comboArr.join(", ");
 // const comboArrStr = comboArrJ.toString();
 // console.log(comboArrStr);
-let comboArr = deskSetupStr.concat(progLangStr,favSongsStr);
+const comboArr = deskSetupStr.concat(progLangStr,favSongsStr);
 console.log(comboArr);
