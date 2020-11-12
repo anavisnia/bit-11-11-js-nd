@@ -80,6 +80,14 @@ console.log(verte3);
 // Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
 const favSongsText = `${favSongs[4]}, ${favSongs[3]}, ${favSongs[2]}, ${favSongs[1]}, ${favSongs[0]}`;
 console.log(favSongsText);
+// from class
+let allFavSongs = '';
+allFavSongs = allFavSongs + favSongs[0];
+allFavSongs = allFavSongs + ', ' + favSongs[1];
+allFavSongs = allFavSongs + ', ' + favSongs[2];
+allFavSongs = allFavSongs + ', ' + favSongs[3];
+allFavSongs = allFavSongs + ', ' + favSongs[4];
+console.log(allFavSongs);
 
 const progLangText = `${progLang[4]}, ${progLang[3]}, ${progLang[2]}, ${progLang[1]}, ${progLang[0]}`;
 console.log(progLangText);
