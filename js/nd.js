@@ -213,7 +213,21 @@ console.clear();
 
 // * panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
 // pvz.: “abcdef” -> “fedcba”
-
+    const abcd = 'abcdef';
+    let fed = '';
+    // for (let i = 0; i <= abcd.length - 1; i++) {
+    //     vienaR = abcd[i];
+    //     console.log(vienaR);
+    //     fed = fed + vienaR;
+    // };
+    // console.log(fed);
+    let vienaR = '';
+    for (i = abcd.length - 1; i >= 0; i--) {
+        vienaR = abcd[i];
+        console.log(vienaR);
+        fed = fed + vienaR;
+    };
+    console.log(fed);
 // * Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
 // a. 0 - 11
 // b. 8 - 31
