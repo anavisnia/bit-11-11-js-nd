@@ -210,7 +210,7 @@ console.clear();
         numS4 = numS4 + i;
     };
     console.log(numS4);
-
+    console.log('------------------------------------');
 // * panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
 // pvz.: “abcdef” -> “fedcba”
     const abcd = 'abcdef';
@@ -228,8 +228,32 @@ console.clear();
         fed = fed + vienaR;
     };
     console.log(fed);
+    console.log('------------------------------------');
 // * Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
 // a. 0 - 11
+    numMod3 = 0;
+    numMod5 = 0;
+    numMod7 = 0;
+    for (i = 0; i <= 11; i++) {
+        if (i%3 === 0) {
+            numMod3 = i;
+            console.log(numMod3);
+        }
+    };
+    console.log('------------------------------------');
+    for (i = 0; i <= 11; i++) {
+        if  (i%5 === 0) {
+            numMod5 = i;
+            console.log(numMod5);
+        };
+    };
+    console.log('------------------------------------');
+    for (i = 0; i<= 11; i++) {
+        if (i%7 === 0) {
+            numMod7 = i;
+            console.log(numMod7);
+        };
+    };
 // b. 8 - 31
 // c. -18 - 18
 // d.  rezultatą pateikti tokiu formatu:
