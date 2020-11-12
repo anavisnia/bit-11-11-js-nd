@@ -177,11 +177,39 @@ console.clear();
 
 // * Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
 // a. 0 - 0
+    for (i = 0; i <= 0; i++) {
+        console.log(i);
+    };
 // b. 0 - 4
+    let numS = 0;
+    for (i = 0; i <= 4; i++) {
+       numS = numS + i;
+    };
+    console.log(numS);
 // c. 0 - 100
+    let numS1 = 0;
+    for (i = 0; i <=100; i++) {
+        numS1 = numS1 + i;
+    };
+    console.log(numS1);
 // d. 574 - 815
+    let numS2 = 0;
+    for (i = 574; i <= 815; i++) {
+        numS2 = numS2 + i;
+    }
+    console.log(numS2);
 // e. -50 - 50
+    let numS3 = 0;
+    for (i = -50; i <= 50; i++) {
+        numS3 = numS3 + i;
+    }
+    console.log(numS3);
 // f. -70 - 30
+    let numS4 = 0;
+    for (i = -70; i <= 30; i++) {
+        numS4 = numS4 + i;
+    };
+    console.log(numS4);
 
 // * panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
 // pvz.: “abcdef” -> “fedcba”
