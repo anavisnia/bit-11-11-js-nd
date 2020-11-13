@@ -232,15 +232,21 @@ console.clear();
 // * Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
 // a. 0 - 11
     numMod3 = 0;
-    numMod5 = 0;
-    numMod7 = 0;
+    atsMod3 = '';
+
     for (i = 0; i <= 11; i++) {
         if (i%3 === 0) {
             numMod3 = i;
             console.log(numMod3);
+            atsMod3 = atsMod3 + i;
         }
     };
+    console.log(atsMod3);
+    console.log(atsMod3.length);
+    console.log(`Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra ${atsMod3.length} vienetai.`);
+    // bet ar tiks string metodas kitiems? 🤔
     console.log('------------------------------------');
+    numMod5 = 0;
     for (i = 0; i <= 11; i++) {
         if  (i%5 === 0) {
             numMod5 = i;
@@ -248,6 +254,7 @@ console.clear();
         };
     };
     console.log('------------------------------------');
+    numMod7 = 0;
     for (i = 0; i<= 11; i++) {
         if (i%7 === 0) {
             numMod7 = i;
