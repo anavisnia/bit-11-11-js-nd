@@ -170,7 +170,7 @@ if (favSongsLeng <= favSingersLeng) {
     console.log('False');
 };
 
-console.clear();
+// console.clear();
 /* *******************
 * Ciklo for panaudojimas
 ******************* */
@@ -228,8 +228,8 @@ console.clear();
         fed = fed + vienaR;
     };
     console.log(fed);
-    
-    console.clear();
+
+    // console.clear();
     console.log('------------------------------------');
 // * Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
 // a. 0 - 11
@@ -239,12 +239,12 @@ console.clear();
     for (i = 0; i <= 11; i++) {
         if (i%3 === 0) {
             numMod3 = i;
-            console.log(numMod3);
+            // console.log(numMod3);
             atsMod3 = atsMod3 + i;
         }
     };
-    console.log(atsMod3);
-    console.log(atsMod3.length);
+    // console.log(atsMod3);
+    // console.log(atsMod3.length);
     console.log(`Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra ${atsMod3.length} vienetai.`);
     // bet ar tiks string metodas kitiems? 🤔
     console.log('------------------------------------');
@@ -317,8 +317,8 @@ for (i = 8; i<= 31; i++) {
 // console.log(ats2Mod7);
 console.log(`Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 7 yra ${ats2Mod7.length} vienetai.`);
 
-
-console.clear();
+console.log('------------------------------------');
+// console.clear();
 // c. -18 - 18
 num3Mod3 = 0;
 ats3Mod3 = [];
@@ -342,7 +342,7 @@ for (i = -18; i<= 18; i++) {
     };
 };
 // console.log(ats3Mod5);
-console.log(`Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 5 yra ${ats3Mod5.length} vienetai.`);
+console.log(`Skaičių intervale tarp -18 ir 18, besidalijančių be liekanos iš 5 yra ${ats3Mod5.length} vienetai.`);
 
 console.log('------------------------------------');
 num3Mod7 = 0;
@@ -355,7 +355,7 @@ for (i = -18; i<= 18; i++) {
     };
 };
 // console.log(ats3Mod7);
-console.log(`Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 7 yra ${ats3Mod7.length} vienetai.`);
+console.log(`Skaičių intervale tarp -18 ir 18, besidalijančių be liekanos iš 7 yra ${ats3Mod7.length} vienetai.`);
 // d.  rezultatą pateikti tokiu formatu:
 // 1. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
 // 2. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
