@@ -247,12 +247,20 @@ console.clear();
     // bet ar tiks string metodas kitiems? 🤔
     console.log('------------------------------------');
     numMod5 = 0;
+    atsMod5 = [];
     for (i = 0; i <= 11; i++) {
         if  (i%5 === 0) {
             numMod5 = i;
             console.log(numMod5);
+            // atsMod5 = atsMod5 + i;
+            atsMod5.push(i);
         };
     };
+    console.log(atsMod5);
+    console.log(atsMod5.length);
+    console.log(`Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra ${atsMod5.length} vienetai.`);
+    // console.log(atsMod5.length); 
+    // jo, skaicioja 10 kaip du simbolius
     console.log('------------------------------------');
     numMod7 = 0;
     for (i = 0; i<= 11; i++) {
