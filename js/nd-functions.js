@@ -87,3 +87,25 @@ console.log(daug3);
 console.log(daug4);
 console.log(daug5);
 console.log('-----------------------------------');
+
+console.clear();
+let skintString = '';
+function skaitmenuKiekisSkaiciuje(kintamas) {
+
+    if (typeof kintamas !== 'number') {
+        console.log('Pateikta netinkamo tipo reikšmė.');
+    };
+    if ('' + kintamas === 'NaN') {
+        console.log('Pateikta netinkamo tipo reikšmė.');
+    };
+    
+        
+    return kintamas; 
+};
+
+console.log(skaitmenuKiekisSkaiciuje(5));
+console.log(skaitmenuKiekisSkaiciuje(781));
+console.log(skaitmenuKiekisSkaiciuje(37060123456));
+console.log(skaitmenuKiekisSkaiciuje(true));
+console.log(skaitmenuKiekisSkaiciuje('asd'));
+console.log(skaitmenuKiekisSkaiciuje(NaN));
