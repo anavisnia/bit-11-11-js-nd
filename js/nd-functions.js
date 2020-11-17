@@ -98,7 +98,7 @@ function skaitmenuKiekisSkaiciuje(kintamas) {
     if ('' + kintamas === 'NaN') {
         console.log('Pateikta netinkamo tipo reikšmė.');
     };
-    
+    // irasyti salyga, kuri grazintu kintomuju kieki
         
     return kintamas; 
 };
@@ -109,3 +109,9 @@ console.log(skaitmenuKiekisSkaiciuje(37060123456));
 console.log(skaitmenuKiekisSkaiciuje(true));
 console.log(skaitmenuKiekisSkaiciuje('asd'));
 console.log(skaitmenuKiekisSkaiciuje(NaN));
+console.log('Not done');
+console.log('-----------------------------------');
+
+function skaitmenuKiekisSkaiciuje() {
+    
+}
