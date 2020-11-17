@@ -112,6 +112,38 @@ console.log(skaitmenuKiekisSkaiciuje(NaN));
 console.log('Not done');
 console.log('-----------------------------------');
 
-function skaitmenuKiekisSkaiciuje() {
-    
+function didziausiasSkaiciusSarase(manoKintamasis) {
+    // jei perduotas kintamasis nėra sąrašo tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
+    if (typeof manoKintamasis !== 'object') {
+        console.log('Pateikta netinkamo tipo reikšmė.');
+        return false;
+    }
+    // jei sąrašas yra tuščias, tai išveda pranešimą “Pateiktas sąrašas negali būti tuščias.”
+
+    // let emptyAr = [];
+    // if ((Array.isArray(emptyAr)) && emptyAr.length) {
+    //     console.log('Pateiktas sąrašas negali būti tuščias.');
+    //     return false;
+    // }
+    // if (Array && Array.constructor === Array && Array.length === 0) {
+    //     console.log('Pateiktas sąrašas negali būti tuščias.');
+    //     return false;
+    // } else {
+    //     return manoKintamasis;
+    // }
+    if (manoKintamasis.length === 0) {
+        console.log('Pateiktas sąrašas negali būti tuščias.');
+        return false;
+    }
+
+    return manoKintamasis;
 }
+
+console.log(didziausiasSkaiciusSarase([1]));
+console.log(didziausiasSkaiciusSarase([1,2,3]));
+console.log(didziausiasSkaiciusSarase([-5,78,14,0,18]));
+console.log(didziausiasSkaiciusSarase([69,69,69,69,66]));
+console.log(didziausiasSkaiciusSarase([-1,-2,-3,-4,-5,-6,-7,-8]));
+console.log(didziausiasSkaiciusSarase('pomidoras'));
+console.log( didziausiasSkaiciusSarase([]));
+// console.log( didziausiasSkaiciusSarase(['7']));
