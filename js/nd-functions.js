@@ -162,6 +162,20 @@ TESTAI:
 sugalvoti bent 5 testus, kurie bendrai iš esmės patvirtintu gerą funkcijos veikimą
 *************************** */
 
-function dalyba() {
-    
+function dalyba(a, b) {
+
 }
+
+console.log(dalyba(2, 7));
+console.log(dalyba(8, 2));
+console.log(dalyba(-3, 8));
+console.log(dalyba(6, -2));
+console.log(dalyba(3.4, -4));
+console.log(dalyba(3.4, 6));
+console.log(dalyba('9', 6));
+console.log(dalyba(Infinity, 6));
+console.log(dalyba(2, -Infinity));
+console.log(dalyba(7, []));
+console.log(dalyba(4, [2]));
+console.log(dalyba(6, [-4]));
+console.log(dalyba(6, [8, -4]));
