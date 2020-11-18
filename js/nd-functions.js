@@ -178,5 +178,6 @@ console.log(dalyba(2, -Infinity));
 console.log(dalyba(7, []));
 console.log(dalyba(4, [2]));
 console.log(dalyba(6, [-4]));
+console.log(dalyba(6, ['-6']));
 console.log(dalyba(6, [8, -4]));
 console.log(dalyba([8], [-4]));
