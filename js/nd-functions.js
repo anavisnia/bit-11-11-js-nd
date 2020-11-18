@@ -181,3 +181,31 @@ console.log(dalyba(6, [-4]));
 console.log(dalyba(6, ['-6']));
 console.log(dalyba(6, [8, -4]));
 console.log(dalyba([8], [-4]));
+
+console.clear();
+// funkcija, kuri priimtu du skaitmenis po kablelio
+function numComma(number, position) {
+    // return parseFloat(number.toFixed(position));
+
+    let ats = number;
+
+    // 3.1415 (apval iki 2 poziciju)
+    // 314.15   * 10**2
+    // 314      round
+    // 3.14     /10**2 (dalyba is 10**2 )
+
+    const power = 10**position;
+    ats = number * power;
+    ats - Math.floor(ats);
+    ats /= power;
+
+    return ats;
+}
+
+
+// input
+const num = 3.1415;
+// output
+// const rez = 3.14;
+const rez = numComma(num, 2)
+console.log(rez, '->', 3.14);
