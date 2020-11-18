@@ -161,27 +161,97 @@ gražinti suskaičiuotą reikšmę
 TESTAI:
 sugalvoti bent 5 testus, kurie bendrai iš esmės patvirtintu gerą funkcijos veikimą
 *************************** */
+console.clear();
 
 function dalyba(a, b) {
+    // input validation
+    if (typeof a !== 'number' && typeof b !== 'number') {
+        return 'ERROR: Dveju skaiciaus ivesta reiksme yra ne skaiciaus tipo.'
+    }
+    if ('' + a === 'NaN' && '' + b === 'NaN') {
+        return 'ERROR: Dveju skaiciaus ivesta reiksme yra ne normlaus tipo.'
+    }
+    if (a === Number.POSITIVE_INFINITY && a === Number.POSITIVE_INFINITY) {
+        return 'ERROR: Dveju skaiciaus ivesta reiksme negali buti Infinity tipo.'
+    }
+    if (a === Number.NEGATIVE_INFINITY && a === Number.NEGATIVE_INFINITY) {
+        return 'ERROR: Dveju skaiciaus ivesta reiksme negali buti -Infinity tipo.'
+    }
+    if (typeof a !== 'number' ) {
+        return 'ERROR: Pirmojo skaiciaus ivesta reiksme yra ne skaiciaus tipo.'
+    }
+    if ('' + a === 'NaN') {
+        return 'ERROR: Pirmojo skaiciaus ivesta reiksme yra ne normlaus tipo.'
+    }
+    if ('' + a === 'Infinity') {
+        return 'ERROR: Pirmojo skaiciaus ivesta reiksme negali buti Infinity tipo.'
+    }
+    if (a === Number.NEGATIVE_INFINITY) {
+        return 'ERROR: Pirmojo skaiciaus ivesta reiksme negali buti Infinity tipo. False!'
+    }
+    if (typeof b !== 'number' ) {
+        return 'ERROR: Antrojo skaiciaus ivesta reiksme yra ne skaiciaus tipo.'
+    }
+    if ('' + b === 'NaN') {
+        return 'ERROR: Antrojo skaiciaus ivesta reiksme yra ne normlaus tipo.'
+    }
+    if ('' + b === 'Infinity') {
+        return 'ERROR: Antrojo skaiciaus ivesta reiksme negali buti Infinity tipo.'
+    }
+    if (b === Number.NEGATIVE_INFINITY) {
+        return 'ERROR: Antrojo skaiciaus ivesta reiksme negali buti Infinity tipo. False!'
+    }
+    if (b === Number.POSITIVE_INFINITY && a === Number.POSITIVE_INFINITY) {
+        return 'ERROR: Dveju skaiciaus ivesta reiksme negali buti Infinity tipo.'
+    }
+    if (b === Number.NEGATIVE_INFINITY && a === Number.NEGATIVE_INFINITY) {
+        return 'ERROR: Dveju skaiciaus ivesta reiksme negali buti -Infinity tipo.'
+    }
+  
 
+    // logic
+    const ats = a / b;
+
+
+    // return
+    
+    return ats;
 }
 
+// reikia filtruoti
+// console.log('Reikia filtruoti:');
+
+// filtruota
+console.log('Filtruota:');
+console.log(dalyba(2, -Infinity));
+console.log(dalyba(Infinity, -Infinity));
+console.log(dalyba(-Infinity, Infinity));
+console.log(dalyba(Infinity, 6));
+console.log(dalyba(5, NaN));
+console.log(dalyba(NaN, 5));
+console.log(dalyba(NaN, NaN));
+console.log(dalyba('zodis', []));
+console.log(dalyba('zodis', 'kitas'));
+console.log(dalyba(7, []));
+console.log(dalyba(6, ['-6']));
+// dar galima patikrinti jeigu daugiau negu vienas skaicius - ismesti klaida
+console.log(dalyba(6, [8, -4]));
+console.log(dalyba('9', 6));
+console.log(dalyba(4, [2]));
+console.log(dalyba(6, [-4]));
+console.log(dalyba([8], [-4]));
+
+// geri atsakymai
+console.log('Geri skaiciavimai:');
 console.log(dalyba(2, 7));
 console.log(dalyba(8, 2));
 console.log(dalyba(-3, 8));
 console.log(dalyba(6, -2));
 console.log(dalyba(3.4, -4));
 console.log(dalyba(3.4, 6));
-console.log(dalyba('9', 6));
-console.log(dalyba(Infinity, 6));
-console.log(dalyba(2, -Infinity));
-console.log(dalyba(7, []));
-console.log(dalyba(4, [2]));
-console.log(dalyba(6, [-4]));
-console.log(dalyba(6, ['-6']));
-console.log(dalyba(6, [8, -4]));
-console.log(dalyba([8], [-4]));
 
+
+/*
 console.clear();
 // funkcija, kuri priimtu du skaitmenis po kablelio
 function numComma(number, position) {
@@ -209,3 +279,4 @@ const num = 3.1415;
 // const rez = 3.14;
 const rez = numComma(num, 2)
 console.log(rez, '->', 3.14);
+*/
