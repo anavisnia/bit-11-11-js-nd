@@ -147,3 +147,21 @@ console.log(didziausiasSkaiciusSarase([-1,-2,-3,-4,-5,-6,-7,-8]));
 console.log(didziausiasSkaiciusSarase('pomidoras'));
 console.log( didziausiasSkaiciusSarase([]));
 // console.log( didziausiasSkaiciusSarase(['7']));
+
+
+/* ************************
+Funkcija pavadinimu “dalyba”:
+turi priimti du kintamuosius
+reikia sugalvoti ir įgyvendinti kuo daugiau logiškų patikrinimų, kurie padėtų apsaugoti funkciją nuo neteisingo panaudojimo
+esant blogoms sąlygoms, išvesti atitinkamą pranešimą
+esant geroms - tęsti darbą
+į atskirą kintamąjį išsaugoti apskaičiuotą dviejų skaičių dalybos reikšmę
+daliname pirmąjį skaičių iš antrojo
+gražinti suskaičiuotą reikšmę
+TESTAI:
+sugalvoti bent 5 testus, kurie bendrai iš esmės patvirtintu gerą funkcijos veikimą
+*************************** */
+
+function dalyba() {
+    
+}
